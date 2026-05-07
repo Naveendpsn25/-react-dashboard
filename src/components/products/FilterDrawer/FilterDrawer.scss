@@ -1,0 +1,148 @@
+    .filter-drawer {
+    width: 300px;
+    height: 100vh;
+    background: white;
+    }
+
+    .drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+    }
+
+    .drawer-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+
+    color: #111827;
+    }
+
+    .drawer-content {
+    padding: 20px;
+    }
+
+    .filter-group {
+    margin-bottom: 30px;
+    }
+
+    .group-title {
+    font-size: 18px;
+    font-weight: 600 !important;
+    // margin-left:100px !important;
+    }
+
+    .checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    //   gap: px;
+    margin-bottom: -10px;
+    }
+
+    .option-label {
+    font-size: 16px !important;
+    color: #111827;
+    //   margin-top: 10px !important;
+    }
+
+    // .drawer-menu{
+    //     width: 100px;
+    // }
+
+
+    .colors-container {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 10px;
+}
+
+.color-circle {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.green {
+  background: #16a34a;
+}
+
+.black {
+  background: #000000;
+}
+
+.pink {
+  background: #ff4d4f;
+}
+
+.color-circle.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 14px rgba(255, 77, 79, 0.4);
+}
+
+.check-icon {
+  color: white;
+  font-size: 18px !important;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 8px 10px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.rating-row.active {
+  background: #f3f4f6;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.filled-star {
+  color: #f59e0b;
+  font-size: 24px !important;
+}
+
+.empty-star {
+  color: #9ca3af;
+  font-size: 24px !important;
+}
+
+.rating-text {
+  font-size: 16px !important;
+  color: #111827;
+}
+
+.rating-row:hover{
+    background-color: #9ca3af;
+}
