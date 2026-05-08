@@ -1,7 +1,6 @@
 import { Box, IconButton, Avatar, Badge } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-
 import { useState } from "react"
 
 import NotificationPopOver from "./NotificationPopOver/NotificationPopOver";
@@ -28,6 +27,7 @@ export default function Navbar() {
         position: "sticky",
         top: 0,
         zIndex: 5,
+        // opacity:0.9,
         backgroundColor: "#fff"
         
         // borderBottom: "1px solid #eee",

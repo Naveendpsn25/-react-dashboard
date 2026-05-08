@@ -14,7 +14,7 @@ type FilterDrawerProps = {
   isDrawerOpen: boolean;
   setIsDrawerOpen: React.Dispatch<
     React.SetStateAction<boolean>
-  >;
+    >
 };
 
 export default function FilterDrawer({isDrawerOpen,setIsDrawerOpen,}: FilterDrawerProps) {
@@ -155,7 +155,7 @@ export default function FilterDrawer({isDrawerOpen,setIsDrawerOpen,}: FilterDraw
                 <Typography className="rating-text">& Up</Typography>
                 </Box>
 
-                <Box className="rating-row active">
+                <Box className="rating-row">
                     <Box className="stars">
                         <StarIcon className="filled-star" />
                         <StarBorderIcon className="empty-star" />

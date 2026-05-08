@@ -6,7 +6,7 @@ import GithubImg from "../../common/GithubImg"
 
 export default function Layout() {
   return (
-    <Box sx={{ display: "flex", minHeight: "100vh" }}>
+    <Box sx={{ display: "flex"}}>
       <Sidebar />
 
       <Box sx={{ flex: 1}}>

@@ -147,18 +147,18 @@ export default function Sidebar() {
           </ListItemButton>
 
           <ListItemButton sx={{ borderRadius: 2, mb: 0.5 }}
-           selected={location.pathname === "/users"}>
+           selected={location.pathname === "/users"} onClick={() =>navigate("/users")}>
             <ListItemIcon><PersonIcon /></ListItemIcon>
-            <ListItemText secondary="User" onClick={() =>navigate("/users")}/>
+            <ListItemText secondary="User" />
           </ListItemButton>
 
-          <ListItemButton sx={{ borderRadius: 2, mb: 0.5 }} selected={location.pathname === "/products"}>
+          <ListItemButton sx={{ borderRadius: 2, mb: 0.5 }} selected={location.pathname === "/products"} onClick={() =>navigate("/products")}>
             <ListItemIcon><ShoppingCartIcon /></ListItemIcon>
-            <ListItemText secondary="Product" onClick={() =>navigate("/products")}/>
+            <ListItemText secondary="Product" />
             <Chip label="+3" size="small" sx={{background:"#ffe9d5" }}/>
           </ListItemButton>
 
-          <ListItemButton sx={{ borderRadius: 2, mb: 0.5 }}>
+          <ListItemButton sx={{ borderRadius: 2, mb: 0.5 }} selected={location.pathname === "/blogs"} onClick={() =>navigate("/blogs")}>
             <ListItemIcon><ArticleIcon /></ListItemIcon>
             <ListItemText secondary="Blog" />
           </ListItemButton>
@@ -178,7 +178,7 @@ export default function Sidebar() {
         <Box sx={{mb:12}}>
             <Typography variant="h1" align="center" sx={{color:"#c36b88", fontSize:20, mt:1}}>More features?</Typography>
             <Typography variant="subtitle1" sx={{ mt: 1 }} align="center">From only $69</Typography>
-            <img src="/sidebar.jpeg" alt="" style={{
+            <img src="/illustration-dashboard.webp" alt="" style={{
                                 width: "80%",
                                 borderRadius: 12,
                                 marginTop:"10px",

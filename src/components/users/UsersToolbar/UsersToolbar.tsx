@@ -45,7 +45,7 @@ export default function UsersToolbar({ selectedCount }: Props) {
       <TextField
         placeholder="Search user..."
         size="small"
-        sx={{ width: 300, backgroundColor: "#fff", borderRadius: 2 }}
+        sx={{ width: 300, backgroundColor: "#fff", borderRadius: 2,padding:"10px 0px"}}
         slotProps={{
           input: {
             startAdornment: (

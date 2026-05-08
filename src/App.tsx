@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard"
 import Practice from "./components/Practicepie/Practice"
 import UsersPage from "./pages/UsersPage"
 import Products from "./pages/ProductsPage"
+import BlogPage from "./pages/BlogPage"
 
 export default function App() { 
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="users" element={<UsersPage/>}/>
             <Route path="products" element={<Products/>}/>
+            <Route path="blogs" element={<BlogPage/>}/>
         </Route>
     </Routes>
     </BrowserRouter>
