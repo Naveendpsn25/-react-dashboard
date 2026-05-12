@@ -1,0 +1,150 @@
+.blog-card {
+  width: 100%;
+  // border-radius: 0px 0px 20px 20px !important;
+  overflow: visible !important;
+  background: white;
+  // height: 430px;
+  width: "100%";
+   border-radius: 20px !important;
+  border: 1px solid #eef1f4;
+  box-shadow:
+    0px 4px 20px rgba(15, 23, 42, 0.05),
+    0px 1px 3px rgba(15, 23, 42, 0.03) !important;
+}
+
+.blog-image-wrapper {
+  position: relative;
+  overflow: visible !important;
+  border-radius: 20px 20px 0 0;
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.avatar-wrapper {
+  position: absolute;
+  bottom: -28px;
+  left: 24px;
+
+  // width: 72px;
+  // height: 72px;
+
+  // background: white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+// 
+  // z-index: 20;
+}
+
+.avatar-wrapper {
+  position: absolute;
+  bottom: -28px;
+  left: 24px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 20;
+}
+
+.blog-avatar {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 5;
+  left: 30px;
+  top: 180px;
+  border-radius:  50%;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  background: white;
+  padding: 24px 24px 24px;
+//   padding-bottom: 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 10px;
+}
+
+.blog-date {
+  font-size: 14px !important;
+  color: #8b96a5;
+  margin-bottom: 10px !important;
+  margin-top: 20px !important;
+}
+
+.blog-title1 {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  color: #111827;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+    // line-clamp: 3;    
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom:15px !important;
+}
+
+.blog-stats-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px !important;
+  // padding-top: 10px 20px !important;
+  justify-content: space-around;
+  margin-left: 70px !important;
+  // margin-top: 0px;
+  // margin-left: 4px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  // gap: 2px;
+
+}
+
+.stat-icon {
+  width: 15px;
+  height: 15px;
+  opacity: 0.7;
+}
+
+.stat-text {
+  font-size: 13px !important;
+  color: #8b96a5;
+  font-weight: 500 !important;
+}
+
+.curve-shape {
+  position: absolute;
+  bottom: -1px;
+  left: 50 !important;
+  margin-right: 50px;
+  top: 171px;
+  width: 35%;
+  height: 50px;
+  z-index: 2;
+}
+
+@media (max-width: 599px) {
+
+}
+
+

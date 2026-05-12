@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signinpage {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    #eef5f7 0%,
+    #eef5f7 35%,
+    #f5f1f1 100%
+  );
+}
+
+.topbar {
+  width: 100%;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logoimg {
+  width: 48px;
+  height: auto;
+  display: block;
+}
+
+.help {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.signincenter {
+  min-height: 100vh;
+// padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signincard {
+  width: 100%;
+  max-width: 430px;
+  min-height: 540px !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  background-color: #ffffff !important;
+}
+
+.cardcontent {
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #111827;
+}
+
+.subtitlebox {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.subtitle {
+  font-size: 13px !important;
+  color: #6b7280;
+}
+
+.getstarted {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.formsection {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.passwordtop {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -12px;
+}
+
+.forgottext {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.signinbutton {
+  height: 50px;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  background-color: #111827 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+.dividerbox {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.ortext {
+  font-size: 12px !important;
+  color: #6b7280;
+}
+
+.socialicons {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.socialicon {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.eyeicon {
+  font-size: 22px !important;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.passwordicon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 600px) {
+
+//   .topbar {
+//     // padding: 18/px 20px;
+//   }
+    .signinpage{
+        padding: 20px;
+    }
+  .signincard {
+    min-height:  340px !important;
+    min-width: 300px;
+  }
+
+}
+

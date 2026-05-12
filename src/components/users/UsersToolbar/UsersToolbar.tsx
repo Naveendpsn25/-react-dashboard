@@ -2,14 +2,16 @@ import { Box, TextField, IconButton, InputAdornment,Typography } from "@mui/mate
 import SearchIcon from "@mui/icons-material/Search";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import DeleteIcon from "@mui/icons-material/Delete";
-
+// import { useState } from "react";
 
 type Props = {
   selectedCount: number;
- 
+  searchTerm: string;
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
 }
-export default function UsersToolbar({ selectedCount }: Props) {
 
+
+export default function UsersToolbar({selectedCount,searchTerm,setSearchTerm}: Props) {
     if (selectedCount > 0) {
     return (
       <Box
@@ -55,6 +57,8 @@ export default function UsersToolbar({ selectedCount }: Props) {
             ),
           },
         }}
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
 
       <IconButton sx={{ backgroundColor: "#fff", borderRadius: 2 }}>

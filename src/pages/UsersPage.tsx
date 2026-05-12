@@ -6,7 +6,7 @@ export default function UsersPage() {
   return (
     <Box>
       
-      <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",mb: 3,}}>
+      <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",mb: 3}}>
         <Typography variant="h5">Users</Typography>
 
         <Button variant="contained" startIcon={<AddIcon />} sx={{textTransform: "none",borderRadius: 2,backgroundColor: "#111827"}}>New user</Button>

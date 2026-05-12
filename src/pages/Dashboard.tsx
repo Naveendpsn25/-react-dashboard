@@ -18,43 +18,43 @@ export default function Dashboard() {
 
        <StatsCards />
 
-       <Grid container spacing={2} sx={{ mt: 2 }}>
-        <Grid size={{ xs: 12, md: 4 }}>
+       <Grid container spacing={2} sx={{ mt: 4 }}>
+        <Grid size={{ xs: 12,lg:4 }}>
           <CurrentVisits />
         </Grid>
-        <Grid size={{ xs: 12, md: 8 }}>
+        <Grid size={{ xs: 12, lg:8 }}>
           <WebsiteVisits />
         </Grid>
       </Grid>
 
-      <Grid container spacing={3} sx={{mt:8}}>
-        <Grid size={{ xs: 12, md: 8 }}>
+      <Grid container spacing={3} sx={{mt:3}}>
+        <Grid size={{ xs: 12, lg:8}}>
           <ConversionRates />
         </Grid>
 
-        <Grid size={{ xs: 12, md: 4 ,sm:1}}>
+        <Grid size={{ xs: 12, lg:4}}>
           <CurrentSubject />
         </Grid>
       </Grid>
 
 
-       <Grid container spacing={2} sx={{mt:8}}>
-          <Grid  size={{ xs: 12, md: 8 }}>
+       <Grid container spacing={2} sx={{mt:3}}>
+          <Grid  size={{ xs: 12, lg:8}}>
             <NewsList />
           </Grid>
-          <Grid  size={{ xs: 12, md: 3 }}>
+          <Grid  size={{ xs: 12, lg:4}}>
             <OrderTimeline />
           </Grid>
       </Grid>
 
 
-      <Grid container spacing={2} sx={{mt:8}}>
+      <Grid container spacing={2} sx={{mt:3}}>
   
-        <Grid size={{ xs: 12, md: 4 }} >
+        <Grid size={{ xs: 12, lg: 4 }} >
           <TrafficBySite />
         </Grid>
 
-        <Grid size={{ xs: 12, md: 8 }}>
+        <Grid size={{ xs: 12, lg: 8 }}>
           <Tasks />
         </Grid>
 

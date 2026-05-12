@@ -1,0 +1,111 @@
+.notfound-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  position: relative;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notfound-logo {
+  img {
+    width: 42px;
+    // height: auto;
+    cursor: pointer;
+  }
+}
+
+.notfound-content {
+//   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.notfound-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: #111827;
+  margin-bottom: 20px !important;
+}
+
+.notfound-description {
+  max-width: 500px;
+
+  font-size: 15px !important;
+  font-weight: 100 !important;
+//   line-height: 1.7 !important;
+  color: #6b7280;
+  margin-bottom: 80px !important;
+}
+
+.notfound-image {
+  margin-bottom: 48px;
+
+  img {
+    width: 340px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  margin-bottom: 80px !important;
+
+}
+
+.notfound-button {
+  background-color: #111827 !important;
+  color: white !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 12px 25px !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background-color: #1f2937 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .notfound-page {
+    padding: 24px;
+  }
+
+  .notfound-title {
+    font-size: 24px !important;
+  }
+
+  .notfound-description {
+    max-width: 420px;
+    font-size: 14px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .notfound-image {
+    margin-bottom: 60px !important;
+
+    img {
+      width: 280px;
+    }
+  }
+
+  .notfound-button {
+    font-size: 13px !important;
+    padding: 10px 22px !important;
+  }
+
+  .notfound-github {
+    width: 52px;
+    height: 52px;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+

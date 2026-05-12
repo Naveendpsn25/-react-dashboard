@@ -5,6 +5,9 @@ import Practice from "./components/Practicepie/Practice"
 import UsersPage from "./pages/UsersPage"
 import Products from "./pages/ProductsPage"
 import BlogPage from "./pages/BlogPage"
+import SigninPage from "./pages/SigninPage";
+import NotFoundPage from "./pages/NotFoundPage";
+
 
 export default function App() { 
   return (
@@ -19,6 +22,9 @@ export default function App() {
             <Route path="products" element={<Products/>}/>
             <Route path="blogs" element={<BlogPage/>}/>
         </Route>
+
+        <Route path="signin" element={<SigninPage/>}/>
+        <Route path="notfound" element={<NotFoundPage/>}/>
     </Routes>
     </BrowserRouter>
   );

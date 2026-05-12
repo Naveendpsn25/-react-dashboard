@@ -3,7 +3,7 @@ import { timelineData } from "./timelineData";
 
 export default function OrderTimeline() {
   return (
-    <Paper sx={{ p: 2, borderRadius: 3, height: "80%",width:"330px", }}>
+    <Paper sx={{ p: 2, borderRadius: 3,width:"100%", }}>
       
       <Typography variant="h6" sx={{ mb: 2 }}>Order timeline</Typography>
 

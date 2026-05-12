@@ -50,7 +50,7 @@ export default function WebsiteVisits() {
   return (
     <Paper sx={{ p: 2, borderRadius: 3 }}>
       
-      <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",mb: 2,}}>
+      <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",mb: 2}}>
         <Box>
           <Typography variant="h6">Website visits</Typography>
           <Typography variant="body2" sx={{ color: "gray" }}>(+43%) than last year</Typography>
@@ -82,7 +82,6 @@ export default function WebsiteVisits() {
 
            {(visibleTeam === "both" || visibleTeam === "teamA") && (
             <Bar dataKey="teamA" fill="#3b6cb7" barSize={20} radius={[5,5,0,0]}/>
-            
             )}
 
             {(visibleTeam === "both" || visibleTeam === "teamB") && (

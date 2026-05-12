@@ -4,6 +4,7 @@ import ProductPagination from "../components/products/ProductPagination/ProductP
 import { productsData } from "../data/productsData"
 import FilterDrawer from "../components/products/FilterDrawer/FilterDrawer";
 
+import ProductCartBadge from "../components/common/ProductCartBadge"
 
 import {Box} from "@mui/material"
 import { useState } from "react"
@@ -40,7 +41,7 @@ export default function Products() {
 
       <FilterDrawer isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen}/>
 
-     
+      <ProductCartBadge/> 
 
     </Box>
   );

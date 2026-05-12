@@ -22,12 +22,8 @@ export default function ProductCard({ product }: ProductCardProps) {
 
       <Box className="product-content">
 
-        <Typography className="title">{product.name}</Typography>
-
-
-      
+        <Typography className="title-prod">{product.name}</Typography>      
         <Box className="price-colors">
-
           <Box className="colors">
             {product.colors.map((color, index) => (
               <Box key={index} className="dot" sx={{ backgroundColor: color }}/>

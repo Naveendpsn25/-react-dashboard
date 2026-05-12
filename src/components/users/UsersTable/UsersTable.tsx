@@ -16,6 +16,7 @@ export default function UsersTable() {
     const [rowsPerPage, setRowsPerPage] = useState(5)
     const [selectedIds, setSelectedIds] = useState<number[]>([])
 
+    const [searchTerm, setSearchTerm] = useState("")
 
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null) // decides open menu or not
     const open = Boolean(anchorEl)
@@ -33,11 +34,15 @@ const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => 
   setPage(0)
 }
 
-const paginatedData = usersData.slice(
+
+const filteredData = usersData.filter((user) =>
+  user.name.toLowerCase().includes(searchTerm.toLowerCase())
+)
+
+const paginatedData = filteredData.slice(
   page * rowsPerPage,
   page * rowsPerPage + rowsPerPage
 )
-
 
     const handleToggle = (id: number) => {
   setSelectedIds((prev) =>
@@ -50,10 +55,10 @@ const paginatedData = usersData.slice(
   return (
     <>
     
-        <Paper sx={{ borderRadius: 3, overflow: "hidden" }}>
+        <Paper sx={{ borderRadius: 3, overflow: "hidden"}}>
 
             <Box sx={{ p: 1}}>
-                <UsersToolbar selectedCount={selectedIds.length}/>
+                <UsersToolbar selectedCount={selectedIds.length} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
             </Box>
             <TableContainer component={Paper} sx={{ borderRadius: 3,mt:-1 }}>
 
@@ -104,7 +109,7 @@ const paginatedData = usersData.slice(
 
                     <TableCell>
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
-                            <Avatar>{user.name[0]}</Avatar>
+                            <Avatar sx={{ width: 32, height: 32, fontSize: 14 }}>{user.name[0]}</Avatar>
                             <Box>
                                 <Typography>{user.name}</Typography>
                             </Box>
@@ -125,7 +130,6 @@ const paginatedData = usersData.slice(
                 size="small"
                 sx={{
                     backgroundColor:
-                    
                     user.status === "active" ? "#e6f4ea" : "#fee2e2",
                     color:
                     user.status === "active" ? "#22c55e" : "#ef4444",

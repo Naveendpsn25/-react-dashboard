@@ -1,6 +1,8 @@
 import { Paper, Typography, Box,Divider } from "@mui/material";
 import {PieChart,Pie,Cell,ResponsiveContainer,Tooltip,} from "recharts";
 
+import "./CurrentVisits.scss"
+
 const data = [
   { name: "America", value: 3500 },
   { name: "Asia", value: 2500 },
@@ -55,7 +57,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
 
 export default function CurrentVisits() {
   return (
-    <Paper sx={{p: 2,borderRadius: 3,height: "100%"}}>
+    <Paper sx={{p: 2,borderRadius: 3,height: "100%"}} className="overall-paper" elevation={2}>
       <Typography variant="h6" sx={{ mb: 2 }}>Current visits</Typography>
 
       <Box sx={{ height: 260 }}>
@@ -81,12 +83,14 @@ export default function CurrentVisits() {
         </ResponsiveContainer>
       </Box>
 
-    <Divider sx={{width:"110%",ml:-2}}/>
+    <Divider sx={{ml:2}}/>
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-around",
           mt: 2,
+          flexWrap: "wrap",
+         gap: 2,
         }}
       >
         {data.map((item, index) => (

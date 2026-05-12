@@ -1,15 +1,15 @@
 .product-toolbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start !important;
 
   margin-bottom: 30px;
 }
 
 .toolbar-title {
-  font-size: 18px !important;
+  font-size: 34px !important;
   font-weight: 700 !important;
-
+  margin-left: 10px !important;
   color: #111827;
 }
 
@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   gap: 28px;
+  margin-top: 50px;
 }
 
 .filter-section {
@@ -68,6 +69,45 @@
 
 .sort-icon {
   font-size: 22px !important;
-
   color: #111827;
 }
+
+
+@media (max-width: 600px) {
+
+  .product-toolbar {
+    // flex-direction: column;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+ .toolbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+  .toolbar-title {
+    font-size: 16px !important;
+  }
+
+  .filter-text,
+  .sort-label,
+  .sort-value {
+    font-size: 10px !important;
+  }
+
+  .filter-icon,
+  .sort-icon {
+    font-size: 18px !important;
+  }
+
+  .filter-section,
+  .sort-section {
+    padding: 6px;
+  }
+}
+

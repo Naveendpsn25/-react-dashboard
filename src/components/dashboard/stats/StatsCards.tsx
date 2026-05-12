@@ -3,27 +3,32 @@ import { Typography, Grid, Paper, Box } from "@mui/material";
 
 import {LineChart,Line,Tooltip,ResponsiveContainer,} from "recharts";
 
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
-import PersonIcon from "@mui/icons-material/Person";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import MailIcon from "@mui/icons-material/Mail";
 
+
+import "./stats.scss"
 const icons = [
-  <ShoppingBagIcon />,
-  <PersonIcon />,
-  <ShoppingCartIcon />,
-  <MailIcon />
-]
+  "/stat/stat1.svg",
+  "/stat/stat2.svg",
+  "/stat/stat3.svg",
+  "/stat/stat4.svg",
+];
 
 export default function StatsCards() {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} className="stats-cards-container" columns={12}>
       {statsCardsData.map((card, index: number) => (
-        <Grid size={{ xs: 12, md: 3}} key={index}>
+        <Grid size={{ xs: 12, md: 3, sm:6}} key={index}>
           
-          <Paper sx={{p: 2,borderRadius: 3,backgroundColor: card.color,height: 140,position: "relative"}}>
+          <Paper sx={{p: 2,borderRadius: 3,backgroundColor: card.color,height: 180,position: "relative"}} className="stats-card">
 
-            <Box sx={{position: "absolute",top: 16,left: 16}}>{icons[index]}</Box>
+            <Box component="img" src={icons[index]} alt="stat-icon" sx={{
+    position: "absolute",
+    top: 16,
+    left: 16,
+    width: 35,
+    height: 35,
+  }}
+/>
 
             <Typography sx={{position: "absolute",top: 16,right: 16,fontSize: 14,fontWeight: 600}}>+2.6%</Typography>
 

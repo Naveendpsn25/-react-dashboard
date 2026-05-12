@@ -1,0 +1,25 @@
+.sidebar-item {
+  border-radius: 12px !important;
+  margin-bottom: 4px !important;
+
+  .sidebar-icon {
+    color: #637381;
+  }
+
+  .sidebar-text .MuiTypography-root {
+    color: #637381;
+  }
+
+  &.active {
+    background-color: #e8f0fe !important;
+
+    .sidebar-icon {
+      color: #2065d1 !important;
+    }
+
+    .sidebar-text .MuiTypography-root {
+      color: #2065d1 !important;
+      font-weight: 600 !important;
+    }
+  }
+}

@@ -12,7 +12,7 @@ const data = [
 
 export default function CurrentSubject() {
   return (
-    <Paper sx={{ p: 2, borderRadius: 3, height: "100%" }}>
+    <Paper sx={{ p: 2, borderRadius: 3, height: "100%",width:"100%",minWidth:"320px" }}>
       
       <Typography variant="h6" sx={{ mb: 2 }}>Current subject</Typography>
 
