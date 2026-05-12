@@ -69,7 +69,8 @@ export default function SidebarContent() {
           <UnfoldMoreIcon sx={{ fontSize: 18 }} />
         </Box>
 
-        <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
+        <Menu anchorEl={anchorEl} open={open} onClose={handleClose} anchorOrigin={{ vertical: "top", horizontal: "left" }}
+  transformOrigin={{ vertical: "top", horizontal: "right" }}>
           <MenuItem
             onClick={() => {
                 setSelectedTeam({ name: "Team 1", type: "Free", image: "/team1.webp" });
@@ -82,7 +83,7 @@ export default function SidebarContent() {
                 borderRadius: 2,
                 mb: 1,
                 p: 1,
-                width:250
+                width:223
             }}
             >
            

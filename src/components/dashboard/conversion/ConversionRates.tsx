@@ -11,7 +11,7 @@ type CustomTooltipProps = {
 }
 
 export default function ConversionRates() {
-  const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
+  const CustomTooltip = ({ active, payload, label}: CustomTooltipProps) => {
           if (active && payload && payload.length) {
             return (
               <Box sx={{background: "#fff",px: 2,py: 1.5,borderRadius: 3}} >
