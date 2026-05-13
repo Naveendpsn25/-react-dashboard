@@ -1,6 +1,5 @@
 import {Box,Typography,List,ListItemButton,ListItemText,Chip,Menu,MenuItem,Avatar} from "@mui/material";
 // import "./Sidebar.scss"
-
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore"
 
 import { useState } from "react"
@@ -33,8 +32,8 @@ export default function SidebarContent() {
     <Box
       sx={{
         width: 260,
-        height: "95vh",
-        position:"sticky",
+        height: "100vh",
+        position:"fixed",
         top:0,
         backgroundColor: "#f9fafb",
         display: "flex",
@@ -63,7 +62,8 @@ export default function SidebarContent() {
           <Box sx={{ display: "flex", alignItems: "center", gap: 1,p:1 }}>
             <Avatar src={selectedTeam.image} sx={{width: 28,height: 28}}/> 
             <Typography variant="body1">{selectedTeam.name}</Typography>
-            <Chip label={selectedTeam.type} size="small" color={selectedTeam.type === "Pro" ? "info" : "default"}/>
+            <Chip label={selectedTeam.type} size="small" color={selectedTeam.type === "Pro" ? "info" : "default"}
+            sx={{borderRadius:"0.1",height:20}}/>
           </Box>
 
           <UnfoldMoreIcon sx={{ fontSize: 18 }} />
@@ -156,7 +156,7 @@ export default function SidebarContent() {
 
           <ListItemButton sx={{ borderRadius: 2, mb: 0.5 }}  onClick={() =>navigate("/products")}
           className={location.pathname === "/products"? "sidebar-item active": "sidebar-item"}>
-           <Box component="img" src="/sidebar/product.svg" alt="dashboard" sx={{ width: 22, height: 22 }}/>
+           <Box component="img" src="/sidebar/product.svg" alt="dashboard" sx={{ width: 22, height: 22 }} />
             <ListItemText secondary="Product" className="sidebar-text" sx={{ml:1}}/>
             <Chip label="+3" size="small" sx={{background:"#ffe9d5" }} />
           </ListItemButton>

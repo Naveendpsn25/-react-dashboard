@@ -26,12 +26,13 @@ export default function UsersTable() {
 
   const handleMenuClose = () => {
   setAnchorEl(null)}
-    const handleChangePage = (_event: any, newPage: number) => {
+
+const handleChangePage = (_event: any, newPage: number) => {
         setPage(newPage)}
 
 const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
   setRowsPerPage(parseInt(event.target.value))
-  setPage(0)
+//   setPage(0)
 }
 
 

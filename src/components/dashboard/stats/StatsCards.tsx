@@ -1,8 +1,7 @@
 import { statsCardsData } from "./statsData";
 import { Typography, Grid, Paper, Box } from "@mui/material";
 
-import {LineChart,Line,Tooltip,ResponsiveContainer,} from "recharts";
-
+import {LineChart,Line,Tooltip,ResponsiveContainer} from "recharts";
 
 
 import "./stats.scss"
@@ -10,8 +9,8 @@ const icons = [
   "/stat/stat1.svg",
   "/stat/stat2.svg",
   "/stat/stat3.svg",
-  "/stat/stat4.svg",
-];
+  "/stat/stat4.svg"
+]
 
 export default function StatsCards() {
   return (
@@ -22,13 +21,13 @@ export default function StatsCards() {
           <Paper sx={{p: 2,borderRadius: 3,backgroundColor: card.color,height: 180,position: "relative"}} className="stats-card">
 
             <Box component="img" src={icons[index]} alt="stat-icon" sx={{
-    position: "absolute",
-    top: 16,
-    left: 16,
-    width: 35,
-    height: 35,
-  }}
-/>
+              position: "absolute",
+              top: 16,
+              left: 16,
+              width: 35,
+              height: 35,
+            }}
+          />
 
             <Typography sx={{position: "absolute",top: 16,right: 16,fontSize: 14,fontWeight: 600}}>+2.6%</Typography>
 

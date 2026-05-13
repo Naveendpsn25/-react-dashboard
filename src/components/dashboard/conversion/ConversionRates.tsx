@@ -3,7 +3,6 @@ import {BarChart,Bar,XAxis,YAxis,ResponsiveContainer,LabelList,Tooltip} from "re
 
 import { conversionData } from "./conversionData";
 
-
 type CustomTooltipProps = {
   active?: boolean;
   payload?: any[];
@@ -37,11 +36,8 @@ export default function ConversionRates() {
         }
   return (
     <Paper sx={{ p: 2, borderRadius: 3, height: "100%" }}>
-      
       <Typography variant="h6">Conversion rates</Typography>
-
       <Typography variant="body1" sx={{ color: "gray", mb: 2 }}>(+43%) than last year</Typography>
-
       <Box sx={{ height: 320 }}>
         <ResponsiveContainer width="100%" height="100%">
           
@@ -65,5 +61,5 @@ export default function ConversionRates() {
       </Box>
 
     </Paper>
-  );
+  )
 }

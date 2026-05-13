@@ -3,6 +3,8 @@ import { Grid } from "@mui/material";
 import BlogCard from "../BlogCard/BlogCard";
 
 // import { blogsCardData } from "../../../data/blogsCardData";
+import "./BlogSection.scss"
+
 
 type BlogsSectionProps = {
   blogs: any[];
@@ -19,7 +21,7 @@ export default function BlogsSection({blogs}:BlogsSectionProps) {
           size={{
             xs: 12,
             sm: 6,
-            md: 4,
+            md: 6,
             lg: 3,
           }}
           sx={{gap:3}}

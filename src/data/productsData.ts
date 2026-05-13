@@ -4,7 +4,7 @@ const colorsList = [
   "#cccccc", "#111111", "#ff6600"
 ];
 
-const tags = ["SALE", "NEW"];
+const tags = ["SALE", "NEW"]
 
 function getRandomColors() {
   const count = Math.floor(Math.random() * 3) + 1

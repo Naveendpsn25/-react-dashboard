@@ -42,14 +42,14 @@ export default function BlogCard({
   return (
     <>
     <Card className="blog-card">
+      
         <Box className="blog-image-wrapper">
-        <img src={coverImage} alt="blog" className="blog-image"/>
+            <img src={coverImage} alt="blog" className="blog-image"/>
 
-        <img src="/curve.svg" alt="curve" className="curve-shape" />
-       
-        <img src={authorImage} alt="author" className="blog-avatar" />
-            
-        
+            <Box className="author-curve-wrapper">
+              <img src="/curve.svg" alt="curve" className="curve-shape"/>
+              <img src={authorImage} alt="author" className="blog-avatar"/>
+            </Box>
         </Box>
         <Box className="blog-card-content" >
             <Typography className="blog-date">{createdAt}</Typography>
